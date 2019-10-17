@@ -102,3 +102,12 @@ Determiner les informations STP
 
 ```
 
+## III. Isolation
+
+### I. Simple
+
+![topo3](img/topo3.png)
+![pingvlan](img/ping-stpvlan.png)
+### I. Avec Trunks
+
+![trunks](img/trunks.png)
