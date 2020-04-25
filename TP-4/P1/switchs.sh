@@ -1,0 +1,23 @@
+#!/usr/bin/expect
+
+spawn telnet 192.168.56.101 5001
+send "\r"
+expect "#"
+send "conf t\r"
+expect "(config)#"
+send "hostname D1\r"
+expect "(config)#"
+send "vlan 10\r"
+expect "(config-vlan)#"
+send "name Admins\r"
+send "exit\r"
+expect "(config)#"
+send "vlan 20\r"
+expect "(config-vlan)#"
+send "name Guest\r"
+send "exit\r"
+expect "(config)#"
+send "vlan 30\r"
+expect "(config-vlan)#"
+send "name Infra\r"
+send "exit\r"
